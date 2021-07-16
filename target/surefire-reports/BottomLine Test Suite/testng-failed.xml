@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [BottomLine Test Suite]">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+    <listener class-name="utils.SuiteListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Amazon Test(failed)">
+    <parameter name="validSearch" value="Harry Potter and the Order of the Phoenix"/>
+    <parameter name="invalidSearch" value="Harry Pfghfghotter and thbjkhjke Order of the Phoenbnvnfgix"/>
+    <classes>
+      <class name="testCases.ExampleTest">
+        <methods>
+          <include name="generateTestReport"/>
+          <include name="closeDriver"/>
+          <include name="validateResultsWithFilter" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="validateResults" invocation-numbers="0"/>
+          <include name="closeTestReport"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- testCases.ExampleTest -->
+    </classes>
+  </test> <!-- Amazon Test(failed) -->
+</suite> <!-- Failed suite [BottomLine Test Suite] -->

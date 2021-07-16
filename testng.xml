@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="1" parallel="classes">
+
+    <listeners>
+        <listener class-name="utils.Listeners"/>
+    </listeners>
+
+    <test name="Test">
+        <parameter name="validSearch" value="Harry Potter and the Order of the Phoenix" />
+        <parameter name="invalidSearch" value="Harry Pfghfghotter and thbjkhjke Order of the Phoenbnvnfgix" />
+        <classes>
+            <class name="testCases.ExampleTest"/>
+            <class name="testCases.ExampleTest2"/>
+        </classes>
+    </test>
+
+</suite>
